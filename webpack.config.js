@@ -4,13 +4,16 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const path = require("path");
 
 module.exports = async (env, options) => {
-  const httpsOptions = await devCerts.getHttpsServerOptions();
+  // const httpsOptions = await devCerts.getHttpsServerOptions();
+  const isDev = options.mode === "development";
+  const httpsOptions = isDev ? await devCerts.getHttpsServerOptions() : {};
   return {
     devtool: "source-map",
     entry: { taskpane: "./src/taskpane/taskpane.js" },
     output: {
       path: path.resolve(__dirname, "dist"),
       filename: "[name].bundle.js",
+      clean: true,
     },
     resolve: { extensions: [".html", ".js"] },
     module: {

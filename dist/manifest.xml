@@ -9,17 +9,17 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Marathi to KrutiDev" />
   <Description DefaultValue="Converts selected Unicode Marathi text to KrutiDev 10 encoding." />
-  <IconUrl DefaultValue="https://localhost:3000/assets/icon-32.png" />
-  <HighResolutionIconUrl DefaultValue="https://localhost:3000/assets/icon-80.png" />
+  <IconUrl DefaultValue="https://prashantvpatil775.github.io/marathi-krutidev-addin/assets/icon-32.png" />
+  <HighResolutionIconUrl DefaultValue="https://prashantvpatil775.github.io/marathi-krutidev-addin/assets/icon-80.png" />
   <SupportUrl DefaultValue="https://www.microsoft.com" />
   <AppDomains>
-    <AppDomain>https://localhost:3000</AppDomain>
+    <AppDomain>https://prashantvpatil775.github.io/marathi-krutidev-addin</AppDomain>
   </AppDomains>
   <Hosts>
     <Host Name="Document" />
   </Hosts>
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://localhost:3000/taskpane.html" />
+    <SourceLocation DefaultValue="https://prashantvpatil775.github.io/marathi-krutidev-addin/taskpane.html" />
   </DefaultSettings>
   <Permissions>ReadWriteDocument</Permissions>
 </OfficeApp>

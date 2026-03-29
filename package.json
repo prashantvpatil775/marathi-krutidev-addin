@@ -6,13 +6,15 @@
     "start": "office-addin-debugging start manifest.xml",
     "stop": "office-addin-debugging stop manifest.xml",
     "build": "webpack --mode production",
-    "dev-server": "webpack serve --mode development"
+    "dev-server": "webpack serve --mode development",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
     "@babel/preset-env": "^7.20.0",
     "babel-loader": "^9.1.0",
     "copy-webpack-plugin": "^11.0.0",
+    "gh-pages": "^6.3.0",
     "html-webpack-plugin": "^5.5.0",
     "office-addin-cli": "^1.6.0",
     "office-addin-debugging": "^5.0.0",
