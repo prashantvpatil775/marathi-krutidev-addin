@@ -1,12 +1,14 @@
-const devCerts = require("office-addin-dev-certs");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const path = require("path");
 
 module.exports = async (env, options) => {
-  // const httpsOptions = await devCerts.getHttpsServerOptions();
   const isDev = options.mode === "development";
-  const httpsOptions = isDev ? await devCerts.getHttpsServerOptions() : {};
+  let httpsOptions = {};
+  if (isDev) {
+    const devCerts = require("office-addin-dev-certs");
+    httpsOptions = await devCerts.getHttpsServerOptions();
+  }
   return {
     devtool: "source-map",
     entry: { taskpane: "./src/taskpane/taskpane.js" },
