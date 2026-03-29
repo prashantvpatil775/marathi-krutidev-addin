@@ -1,0 +1,29 @@
+{
+  "name": "marathi-krutidev-addin",
+  "version": "1.0.0",
+  "description": "Word Add-in: Convert Marathi Unicode to KrutiDev 10",
+  "scripts": {
+    "start": "office-addin-debugging start manifest.xml",
+    "stop": "office-addin-debugging stop manifest.xml",
+    "build": "webpack --mode production",
+    "dev-server": "webpack serve --mode development"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@babel/preset-env": "^7.20.0",
+    "babel-loader": "^9.1.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "office-addin-cli": "^1.6.0",
+    "office-addin-debugging": "^5.0.0",
+    "office-addin-dev-certs": "^1.11.0",
+    "office-addin-manifest": "^1.12.0",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.0",
+    "webpack-dev-server": "^4.15.0"
+  },
+  "dependencies": {
+    "core-js": "^3.33.0",
+    "regenerator-runtime": "^0.14.0"
+  }
+}
